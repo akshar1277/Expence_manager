@@ -1,6 +1,7 @@
-body{
-    margin-top: 100px;
+body {
+  margin-top: 100px;
 }
+
 body {
   background: #3e4144;
 }
@@ -8,89 +9,108 @@ body {
 
 
 .container {
-    width: 100%;
-  }
-  
-  .row {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 5px;
-  }
-  
-  /* content */
-  .row div {
-    background-color: #EF5350;
-    padding: 3%;
-    border: 1px solid white;
-    border-radius: 5px;
-    text-align: right;
-    color: white;
-    transition: background-color 1s;
-  }
-
-  #credit{
-    background-color: #66BB6A;
-    height: 140px;
-    text-align: center;
-    padding: 23px;
-
-  }
-  #debit{
-    height: 140px;
-    text-align: center;
-    padding: 23px;
-  }
-  #total1{
-    margin-top: 25px;
-  }
-  #total2{
-    margin-top: 25px;
-  }
- 
-
-  .col-6 {
-    width: 50%;
-  }
-  .col-12 {
-    width: 100%;
-  }
-
-  #record{
-    justify-content: center;
-    align-items: center;
-    margin-top:20px;
-  }
-  #add_record{
-    background-color: skyblue;
-padding: 14px;
-border-radius: 10px;
-
-width: 25%;
-text-align: center;
-  }
-
-
-#edit{
-    background: green;
-padding: 6px;
-height: 25px;
-padding: 2px;
-width: 45px;
-text-align: center;
-border-radius: 4px;
-color: white;
-cursor:pointer;
+  width: 100%;
 }
 
-#delete{
-    background: red;
-padding: 6px;
-height: 25px;
-padding: 2px;
-width: 55px;
-text-align: center;
-border-radius: 4px;
-color: white;
-cursor:pointer;
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+/* content */
+.row div {
+  background-color: #EF5350;
+  padding: 3%;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: right;
+  color: white;
+  transition: background-color 1s;
+}
+
+#credit {
+  background-color: #66BB6A;
+  height: 140px;
+  text-align: center;
+  padding: 23px;
+
+}
+
+#debit {
+  height: 140px;
+  text-align: center;
+  padding: 23px;
+}
+
+#total1 {
+  margin-top: 25px;
+}
+
+#total2 {
+  margin-top: 25px;
+}
+
+
+.col-6 {
+  width: 50%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+#record {
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#add_record {
+  background-color: skyblue;
+  padding: 14px;
+  border-radius: 10px;
+
+  width: 25%;
+  text-align: center;
+}
+
+
+#edit {
+  background: green;
+  padding: 6px;
+  height: 25px;
+  padding: 2px;
+  width: 45px;
+  text-align: center;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+#delete {
+  background: red;
+  padding: 6px;
+  height: 25px;
+  padding: 2px;
+  width: 55px;
+  text-align: center;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
 }

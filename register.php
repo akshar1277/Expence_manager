@@ -7,7 +7,7 @@ include('confs/config.php');
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
     $email = $_POST['email'];
-    
+
     $password = md5($_POST['password']);
 
     $ret = mysqli_query($conn, "SELECT email from tblusers WHERE email = '$email'");
@@ -42,7 +42,12 @@ if (isset($_POST['submit'])) {
     <header>
         <nav class="nav">
             <div class="container">
-                <h1 class="logo"><a href="/index.html">My Website</a></h1>
+            <img style="height: 100px;
+width: 100px;
+padding-top: -67px;
+border-radius: 50%;
+margin-top: -25px;
+margin-bottom: -25px;" src="logo/logo.png" alt="">
                 <ul>
 
                 </ul>
@@ -53,7 +58,7 @@ if (isset($_POST['submit'])) {
         <h1 class="login-title">Register</h1>
         <input type="text" class="login-input" name="name" placeholder="Your Name" autofocus required>
         <input type="email" class="login-input" name="email" placeholder="Your E-mail" required>
-        
+
         <input type="password" class="login-input" name="password" placeholder="Type Password" required>
         <input type="password" class="login-input" name="repeatpassword" placeholder="Repeat Password" required>
 

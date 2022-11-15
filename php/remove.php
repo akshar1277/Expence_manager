@@ -25,4 +25,3 @@ $result_count = mysqli_query(
   else{
     header("location: ../profile.php");
   }
-?>
