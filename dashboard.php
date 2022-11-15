@@ -174,7 +174,7 @@ else :
         $name = $result['name'];
 
         ?>
-        <h1 style="text-align: left; margin-left: 60px;padding:1rem;">Hello <?php echo ucwords($name); ?> </h1>
+        
         <div class="container">
             <div class="row">
                 <?php

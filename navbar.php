@@ -48,7 +48,7 @@ margin-bottom: -40px;" src="logo/logo.png" alt=""></a>
         <ul>
           <li><img id="user_image" style="object-fit: cover;" src="./upload/<?php echo $photo_url ?>" alt=""></li>
           <div class="dropdown">
-            <button class="dropbtn" style="font-weight:bold;">Hello <?php echo $name; ?>
+            <button class="dropbtn" style="font-weight:bold;">Hello <?php echo ucwords($name); ?>
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
